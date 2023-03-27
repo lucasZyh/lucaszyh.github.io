@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>VSCode开发51单片机</title>
+      <link href="/post/593df09b.html"/>
+      <url>/post/593df09b.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、安装插件-EIDE"><a href="#一、安装插件-EIDE" class="headerlink" title="一、安装插件(EIDE)"></a>一、安装插件(EIDE)</h1><p><img src="https://s2.loli.net/2023/03/27/gzYncHyOQfkTtrx.png" alt="image-20230327131445564"></p><h1 id="二、配置Keil-C51路径"><a href="#二、配置Keil-C51路径" class="headerlink" title="二、配置Keil C51路径"></a>二、配置Keil C51路径</h1><p><img src="https://s2.loli.net/2023/03/27/A5xiou3GMS1Lg2t.png" alt="image-20230327131639841"></p><p><img src="https://s2.loli.net/2023/03/27/gTRKO5FHth1XwAx.png" alt="image-20230327131952964"></p><h1 id="三、新建项目"><a href="#三、新建项目" class="headerlink" title="三、新建项目"></a>三、新建项目</h1><blockquote><p>建立8位MCU项目</p></blockquote><img src="https://s2.loli.net/2023/03/27/4M5tfReuC1Gb8kw.png" alt="image-20230327132104007" style="zoom:60%;" /><h1 id="四、修改编译器"><a href="#四、修改编译器" class="headerlink" title="四、修改编译器"></a>四、修改编译器</h1><p><img src="https://s2.loli.net/2023/03/27/obfUq7KtP6vzkR2.png" alt="image-20230327132454865"></p><h1 id="五、创建文件夹"><a href="#五、创建文件夹" class="headerlink" title="五、创建文件夹"></a>五、创建文件夹</h1><blockquote><p>创建一个存放代码的文件夹，并将其添加到项目中</p></blockquote><p><img src="https://s2.loli.net/2023/03/27/SRyjWUe5zmTakZg.png" alt="image-20230327132917570"></p><p><img src="https://s2.loli.net/2023/03/27/i4UBN9D7atmwTWg.png" alt="image-20230327133018498"></p><p><img src="https://s2.loli.net/2023/03/27/jRXG21PwWZLFgTu.png" alt="image-20230327133104574"></p><h1 id="六、新建文件，进行测试"><a href="#六、新建文件，进行测试" class="headerlink" title="六、新建文件，进行测试"></a>六、新建文件，进行测试</h1><blockquote><p>正常方式在SRC文件夹下创建文件</p></blockquote><p><img src="https://s2.loli.net/2023/03/27/BjI8lVZSKQyxRCo.png" alt="image-20230327133325819"></p><blockquote><p>编译</p></blockquote><p><img src="https://s2.loli.net/2023/03/27/PAJulqQMj6hatwD.png" alt="image-20230327133606472"></p><blockquote><p>使用烧录软件将生成的hex文件下载</p></blockquote><blockquote><p>流水灯代码</p></blockquote><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;REG51.H&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;intrins.h&gt;</span> </span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">Delay</span><span class="params">(<span class="type">unsigned</span> <span class="type">int</span> t)</span> <span class="comment">// 延迟函数</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">unsigned</span> <span class="type">char</span> i, j;</span><br><span class="line">    <span class="keyword">while</span> (t &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        i = <span class="number">2</span>;</span><br><span class="line">        j = <span class="number">239</span>;</span><br><span class="line">        <span class="keyword">do</span> &#123;</span><br><span class="line">            <span class="keyword">while</span> (--j)</span><br><span class="line">                ;</span><br><span class="line">        &#125; <span class="keyword">while</span> (--i);</span><br><span class="line">        t--;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">unsigned</span> <span class="type">char</span> i;</span><br><span class="line">    P2 = <span class="number">0XFE</span>;</span><br><span class="line">    <span class="keyword">while</span> (<span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">8</span>; i++) &#123;</span><br><span class="line">            P2 =_crol_(P2,<span class="number">1</span>);;</span><br><span class="line">            Delay(<span class="number">500</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 单片机 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 51单片机 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>部署和添加域名</title>
       <link href="/post/26f271be.html"/>
       <url>/post/26f271be.html</url>
