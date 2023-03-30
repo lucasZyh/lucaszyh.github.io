@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>阿里云图床搭建</title>
+      <link href="/post/b9a4e327.html"/>
+      <url>/post/b9a4e327.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、登录阿里云"><a href="#一、登录阿里云" class="headerlink" title="一、登录阿里云"></a>一、登录阿里云</h1><blockquote><p>注册、登录、<strong>实名认证</strong></p></blockquote><h1 id="二、购买对象存储OSS"><a href="#二、购买对象存储OSS" class="headerlink" title="二、购买对象存储OSS"></a>二、购买对象存储OSS</h1><blockquote><p>在产品中找到对象存储OSS</p></blockquote><p><img src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/202303302319790.png" alt="image-20230330223507765"></p><blockquote><p>我是新用户，这里先购买三个月的使用期</p></blockquote><img src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/202303302319791.png" alt="image-20230330223639443" style="zoom:50%;" /><img src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/202303302319792.png" alt="image-20230330223704380" style="zoom:50%;" /><img src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/202303302319793.png" alt="image-20230330223742995" style="zoom: 67%;" /><h1 id="三、开通对象存储服务-OSS"><a href="#三、开通对象存储服务-OSS" class="headerlink" title="三、开通对象存储服务 OSS"></a>三、开通对象存储服务 OSS</h1><p><img src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/202303302319794.png" alt="image-20230330223927065"></p><p><img src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/202303302319795.png" alt="image-20230330223941173"></p><h1 id="四、创建bucket"><a href="#四、创建bucket" class="headerlink" title="四、创建bucket"></a>四、创建bucket</h1><blockquote><p>选择左侧的bucket列表，然后选择右侧的创建Bucket</p></blockquote><p><img src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/202303302319796.png" alt="image-20230330224142694"></p><img src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/202303302319798.png" alt="image-20230330224739606" style="zoom:67%;" /><img src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/202303302319799.png" alt="image-20230330225000992" style="zoom:67%;" /><blockquote><p>HDFS、版本控制、服务端加密方式、实时日志查询、定时备份   都不开通，不然需要另外收费</p></blockquote><p><img src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/202303302319800.png" alt="image-20230330225608062"></p><blockquote><p>地域结点只要复制 oss-cn-beijing 即可，后面的.aliyuncs.com不需要；后面会用到这个地域结点</p></blockquote><h1 id="五、获取AccessKey"><a href="#五、获取AccessKey" class="headerlink" title="五、获取AccessKey"></a>五、获取AccessKey</h1><p><img src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/202303302319801.png" alt="image-20230330225714598"></p><p><img src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/202303302319802.png" alt="image-20230330225744760"></p><p><img src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/202303302319803.png" alt="image-20230330225804403"></p><blockquote><p>在弹出的页面里，记住你的 <strong>accessKeyId</strong> 和 <strong>accessKeySecret</strong></p></blockquote><h1 id="六、下载配置PicGo"><a href="#六、下载配置PicGo" class="headerlink" title="六、下载配置PicGo"></a>六、下载配置PicGo</h1><p>下载：<a href="https://github.com/Molunerfinn/PicGo/releases">Releases · Molunerfinn&#x2F;PicGo (github.com)</a></p><p>图床设置：</p><ul><li><p>设定Keyld：填写刚刚获得的<code>AccessKeyID</code></p></li><li><p>设定KeySecret：填写<code>AccessKeyIDSecret</code></p></li><li><p>设定Bucket：填写bucket名称，这里填写的是你所创建的bucket名字，不是浏览器里的域名</p></li><li><p>确认存储区域：填写你的地域节点，注意复制的格式</p></li><li><p>指定存储路径：其实就是自定义一个文件夹的名字，以 &#x2F; 结尾；它会自动在你所创建的Bucket里面创建一个文件夹，并把图片上传进去，因此我们不需要在Bucket里面手动的创建这个文件夹</p></li></ul><img src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/202303302319804.png" alt="image-20230330230810995"  /><blockquote><p>打开时间戳命名</p></blockquote><p><img src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/202303302319805.png" alt="image-20230330230906779"></p><h1 id="七、测试Typroa使用图床"><a href="#七、测试Typroa使用图床" class="headerlink" title="七、测试Typroa使用图床"></a>七、测试Typroa使用图床</h1><p> 配置信息</p><ul><li>打开设置:<code>文件--&gt;偏好设置---&gt;图像</code></li><li>选择:复制图片到 .&#x2F;assets 文件夹</li><li>勾选附加选项:和下图一样即可</li><li>设置PicGo的安装路径即可：xxx&#x2F;xxx&#x2F;PicGo.exe</li></ul><p><img src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/202303302319806.png" alt="image-20230330231059792"></p><blockquote><p>验证</p></blockquote><p><img src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/202303302319807.png" alt="image-20230330231247517"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>蓝桥杯备赛题解（小蜜蜂）（一）</title>
       <link href="/post/b97e48cf.html"/>
       <url>/post/b97e48cf.html</url>
