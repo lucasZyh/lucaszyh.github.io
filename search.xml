@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>Live下载</title>
+      <link href="/post/f00df655.html"/>
+      <url>/post/f00df655.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><blockquote><p>镜像下载网址：<a href="https://mirrors.tuna.tsinghua.edu.cn/help/CTAN/">CTAN | 镜像站使用帮助 | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a></p></blockquote><p><img src="https://s2.loli.net/2023/04/10/Fl8EvMWGS25b1d7.png" alt="image-20230407174031122"></p><blockquote><p>下载完成后，解压，打开，双击批处理文件进行安装</p></blockquote><p><img src="https://s2.loli.net/2023/04/10/FThWR9M5mdKxaLN.png" alt="image-20230407174116660"></p><blockquote><p>切换镜像源</p></blockquote><p><img src="https://s2.loli.net/2023/04/10/zrU3ZH9okqxdwJM.png" alt="image-20230407180752177"></p><blockquote><p>单击Advanced，进行设置</p></blockquote><p><img src="https://s2.loli.net/2023/04/10/142uoWQ9sXNbGcz.png" alt="image-20230407174205691"></p><blockquote><p>修改安装路径</p></blockquote><img src="https://s2.loli.net/2023/04/10/U2gF7toGq1jaLWB.png" alt="image-20230407174344805" style="zoom: 67%;" /><blockquote><p>进入漫长的等待，等四千五百多个包安装完</p></blockquote><blockquote><p>等待…</p></blockquote><blockquote><p>等待…</p></blockquote><blockquote><p>After a long, long time</p></blockquote><blockquote><p>出现下面的界面代表安装完成</p></blockquote><p><img src="https://s2.loli.net/2023/04/10/NHAfXaQ654hzUOd.png" alt="image-20230407202201931"></p><h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><blockquote><p>在cmd中依次输入latex -v , tex -v, xelatex -v, pdflatex -v，如果看见版本号即安装成功</p></blockquote><p><img src="https://s2.loli.net/2023/04/10/9PVl4X2vAtponQu.png" alt="image-20230407202354595"></p><blockquote><p>如果出现***不是内部或外部变量，则需要配置环境变量</p></blockquote><p>添加xxx\texlive\2023\bin\win32</p><blockquote><p>不过新版本应该默认勾选了添加环境变量</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>anaconda卸载</title>
+      <link href="/post/17e3fb48.html"/>
+      <url>/post/17e3fb48.html</url>
+      
+        <content type="html"><![CDATA[<p>一、以管理员身份运行Anaconda Prompt</p><p>二、查看anaconda的环境信息</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda info --envs</span><br></pre></td></tr></table></figure><p>三、删除除base外的其他环境</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda remove -n your_env_name(虚拟环境名称) --<span class="built_in">all</span></span><br></pre></td></tr></table></figure><p>四、下载anaocnda-clean包</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install -c anaconda anaconda-clean</span><br></pre></td></tr></table></figure><p>五、输入以下指令</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">anaconda-clean --yes</span><br></pre></td></tr></table></figure><p>执行这个指令会生成一个backup file，这个文件在之后可以删除掉</p><p>六、使用卸载程序卸载</p><p>运行在anaconda安装路径下的<code>Uninstall-Anaconda3.exe</code></p><p>七、直接删除剩余的文件夹</p><p>解决python的pip安装opencv非常慢的问题：<br>opencv-python文件比较大，用以下命令：<br>pip install -i <a href="https://pypi.tuna.tsinghua.edu.cn/simple">https://pypi.tuna.tsinghua.edu.cn/simple</a> opencv-python</p><p>当然，安装其他包，可以用：<br>pip install -i <a href="https://pypi.tuna.tsinghua.edu.cn/simple">https://pypi.tuna.tsinghua.edu.cn/simple</a> xxxxxx<br>其中xxxxxx就是要安装的包</p><p>这里使用的清华大学的镜像包，速度比较快，相比于翻墙等其他方法，简单很多。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>STM32CubeMX安装</title>
       <link href="/post/45675238.html"/>
       <url>/post/45675238.html</url>
