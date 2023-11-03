@@ -1,0 +1,1043 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>7统计模型练习 | 知识小窝</title><meta name="author" content="yuanhao"><meta name="copyright" content="yuanhao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="使用SPSS进行分析求解  第一题 下表1.1是中国1994-2016年国内旅游总花费Y、国内生产总值X1、铁路里程X2和公路里程X3的数据,请据此分析如下问题:(1)就建立简单线性回归模型,分别分析中国国内旅游总花费与国内生产总值、铁路里程和公路里程数据的数量关系。(2)对建立的回归模型进行检验,对几个模型估计检验结果进行比较。     年份 国内旅游总花费&#x2F;议员 国内生产总值&amp;#x">
+<meta property="og:type" content="article">
+<meta property="og:title" content="7统计模型练习">
+<meta property="og:url" content="https://www.yhhome.top/post/333262a2.html">
+<meta property="og:site_name" content="知识小窝">
+<meta property="og:description" content="使用SPSS进行分析求解  第一题 下表1.1是中国1994-2016年国内旅游总花费Y、国内生产总值X1、铁路里程X2和公路里程X3的数据,请据此分析如下问题:(1)就建立简单线性回归模型,分别分析中国国内旅游总花费与国内生产总值、铁路里程和公路里程数据的数量关系。(2)对建立的回归模型进行检验,对几个模型估计检验结果进行比较。     年份 国内旅游总花费&#x2F;议员 国内生产总值&amp;#x">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/21.jpg">
+<meta property="article:published_time" content="2023-11-03T14:46:46.000Z">
+<meta property="article:modified_time" content="2023-11-03T14:51:31.625Z">
+<meta property="article:author" content="yuanhao">
+<meta property="article:tag" content="SPSS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/21.jpg"><link rel="shortcut icon" href="/img/hacker.png"><link rel="canonical" href="https://www.yhhome.top/post/333262a2.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '7统计模型练习',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-11-03 22:51:31'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/universe.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://www.fomal.cc/static/css/runtime.min.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/3.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/book/"><i class="fa-fw fa-solid fa-book"></i><span> 书库</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/21.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="知识小窝"><span class="site-name">知识小窝</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/book/"><i class="fa-fw fa-solid fa-book"></i><span> 书库</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">7统计模型练习</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-11-03T14:46:46.000Z" title="发表于 2023-11-03 22:46:46">2023-11-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-11-03T14:51:31.625Z" title="更新于 2023-11-03 22:51:31">2023-11-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/">数学建模</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>10分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="7统计模型练习"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>使用SPSS进行分析求解</p>
+</blockquote>
+<h1 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h1><ol>
+<li>下表1.1是中国1994-2016年国内旅游总花费Y、国内生产总值X1、铁路里程X2和公路里程X3的数据,请据此分析如下问题:<br>(1)就建立简单线性回归模型,分别分析中国国内旅游总花费与国内生产总值、铁路里程和公路里程数据的数量关系。<br>(2)对建立的回归模型进行检验,对几个模型估计检验结果进行比较。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="center">年份</th>
+<th align="center">国内旅游总花费&#x2F;议员</th>
+<th align="center">国内生产总值&#x2F;亿元</th>
+<th align="center">铁路里程&#x2F;万公里</th>
+<th align="center">公路里程&#x2F;万公里</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1994</td>
+<td align="center">1023.5</td>
+<td align="center">48637.5</td>
+<td align="center">5.9</td>
+<td align="center">111.78</td>
+</tr>
+<tr>
+<td align="center">1995</td>
+<td align="center">1375.7</td>
+<td align="center">61339.9</td>
+<td align="center">6.24</td>
+<td align="center">115.7</td>
+</tr>
+<tr>
+<td align="center">1996</td>
+<td align="center">1638.4</td>
+<td align="center">71813.6</td>
+<td align="center">6.49</td>
+<td align="center">118.58</td>
+</tr>
+<tr>
+<td align="center">1997</td>
+<td align="center">2112.7</td>
+<td align="center">79715</td>
+<td align="center">6.6</td>
+<td align="center">122.64</td>
+</tr>
+<tr>
+<td align="center">1998</td>
+<td align="center">2391.2</td>
+<td align="center">85195.5</td>
+<td align="center">6.64</td>
+<td align="center">127.85</td>
+</tr>
+<tr>
+<td align="center">1999</td>
+<td align="center">2831.9</td>
+<td align="center">90564.4</td>
+<td align="center">6.74</td>
+<td align="center">135.17</td>
+</tr>
+<tr>
+<td align="center">2000</td>
+<td align="center">3175.5</td>
+<td align="center">100280.1</td>
+<td align="center">6.87</td>
+<td align="center">167.98</td>
+</tr>
+<tr>
+<td align="center">2001</td>
+<td align="center">3522.4</td>
+<td align="center">110863.1</td>
+<td align="center">7.01</td>
+<td align="center">169.8</td>
+</tr>
+<tr>
+<td align="center">2002</td>
+<td align="center">3878.4</td>
+<td align="center">121717.4</td>
+<td align="center">7.19</td>
+<td align="center">176.52</td>
+</tr>
+<tr>
+<td align="center">2003</td>
+<td align="center">3442.3</td>
+<td align="center">137422</td>
+<td align="center">7.3</td>
+<td align="center">180.98</td>
+</tr>
+<tr>
+<td align="center">2004</td>
+<td align="center">4710.7</td>
+<td align="center">161840.2</td>
+<td align="center">7.44</td>
+<td align="center">187.07</td>
+</tr>
+<tr>
+<td align="center">2005</td>
+<td align="center">5285.9</td>
+<td align="center">187318.9</td>
+<td align="center">7.54</td>
+<td align="center">334.52</td>
+</tr>
+<tr>
+<td align="center">2006</td>
+<td align="center">6229.7</td>
+<td align="center">219438.5</td>
+<td align="center">7.71</td>
+<td align="center">345.7</td>
+</tr>
+<tr>
+<td align="center">2007</td>
+<td align="center">7770.6</td>
+<td align="center">270232.3</td>
+<td align="center">7.8</td>
+<td align="center">358.37</td>
+</tr>
+<tr>
+<td align="center">2008</td>
+<td align="center">8749.3</td>
+<td align="center">319515.5</td>
+<td align="center">7.97</td>
+<td align="center">373.02</td>
+</tr>
+<tr>
+<td align="center">2009</td>
+<td align="center">10183.7</td>
+<td align="center">349081.4</td>
+<td align="center">8.55</td>
+<td align="center">386.08</td>
+</tr>
+<tr>
+<td align="center">2010</td>
+<td align="center">12579.8</td>
+<td align="center">413030.3</td>
+<td align="center">9.12</td>
+<td align="center">400.82</td>
+</tr>
+<tr>
+<td align="center">2011</td>
+<td align="center">19305.4</td>
+<td align="center">489300.6</td>
+<td align="center">9.32</td>
+<td align="center">410.64</td>
+</tr>
+<tr>
+<td align="center">2012</td>
+<td align="center">22706.2</td>
+<td align="center">540367.4</td>
+<td align="center">9.76</td>
+<td align="center">423.75</td>
+</tr>
+<tr>
+<td align="center">2013</td>
+<td align="center">26276.1</td>
+<td align="center">595244.4</td>
+<td align="center">10.31</td>
+<td align="center">435.62</td>
+</tr>
+<tr>
+<td align="center">2014</td>
+<td align="center">30311.9</td>
+<td align="center">643974</td>
+<td align="center">11.18</td>
+<td align="center">446.39</td>
+</tr>
+<tr>
+<td align="center">2015</td>
+<td align="center">34195.1</td>
+<td align="center">689052.1</td>
+<td align="center">12.1</td>
+<td align="center">457.73</td>
+</tr>
+<tr>
+<td align="center">2016</td>
+<td align="center">39390</td>
+<td align="center">743585.5</td>
+<td align="center">12.4</td>
+<td align="center">469.63</td>
+</tr>
+</tbody></table>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/21/aiwZsE82AjSCnFe.png" alt="image-20230721200241386"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/21/YXfeR6wvCcO4Fdu.png" alt="image-20230721200345432"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/21/XMIl9b1Z2vKQHFG.png" alt="image-20230721200352912"></p>
+<p>国内生产总值</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/21/notAP4QXampCeJS.png" alt="image-20230721200605599"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/21/Zg9WHxUyE7r4Cwl.png" alt="image-20230721200451730"></p>
+<blockquote>
+<p>$\begin{aligned}\widehat{y}_{1}&#x3D;-3228.021+0.05x\<br>R^{2}&#x3D;0.957,t&#x3D;21.68\end{aligned}$</p>
+<p>R^2^&#x3D;0.957,表明所建模型整体上对样本数据拟合程度较好。</p>
+<p> 回归系数t的检验,t&#x3D;21.7&gt;t<del>0.025</del>(21)&#x3D;2.08,对斜率系数的显著性表明,国内生产总值对中国国内旅游总花费存在显著影响</p>
+</blockquote>
+<p>铁路里程</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/21/WpvUi13wVrSEJae.png" alt="image-20230721201207504"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/21/RLhXmIF43aunilA.png" alt="image-20230721201222091"></p>
+<blockquote>
+<p>$\begin{aligned} \widehat{y}_{2}&#x3D;-39438.731+6165.253x \<br>R^{2}&#x3D;0.971,t&#x3D;26.496\end{aligned}$</p>
+<p>R^2^&#x3D;0.971,说明所建模型整体上对样本数据拟合程度较好。</p>
+<p>t&#x3D;26.496&gt;t<del>0.025</del>(21)&#x3D;2.08,对斜率系数的显著性表明,铁路里程对国内旅游总花费存在显著影响</p>
+</blockquote>
+<p>公路里程</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/21/JtwyBSZP3Kv79oa.png" alt="image-20230721201636333"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/21/VvHXy5cKSxgz1ER.png" alt="image-20230721201644013"></p>
+<blockquote>
+<p>$\begin{aligned}\widehat{y}_{3}&#x3D;-9106.166+71.639x\<br>R^{2}&#x3D;0.701,t&#x3D;7.04\end{aligned}$</p>
+<p>R^2^&#x3D;0.701,说明所建模型整体上对样本数据拟合程度较好。</p>
+<p> t&#x3D;7.04&gt;t<del>0.025</del>(21)&#x3D;2.08,对于斜率系数的显著性表明,公路里程对国内旅游总花费存在显著影响。</p>
+</blockquote>
+<h1 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h1><ol start="2">
+<li>进入21世纪后,中国的家用汽车增长很快。家用汽车的拥有量收到经济增长、公共服务、市场价格、交通状况、社会环境、政策因素的影响。为了研究一些主要因素与家用汽车有用量的数量关系,选择“百户拥有家用汽车量”、“人均地区生产总值”“城镇人口比重”、“居民消费价格指数”等变量,2016年全国各省区市的有关数据如下表1.2,试分析下述问题:<br>(1)建立百户拥有家用汽车量计量经济模型,估计参数并对模型进行检验,检验结论的依据是什么?<br>(2)分析模型参数估计结果的经济意义,你如何解读模型估计检验的结果?<br>(3)你认为模型需要如何改进?</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="center">地区</th>
+<th align="center">百户拥有家用汽车量&#x2F;辆</th>
+<th align="center">人均地区生产总值&#x2F;万元</th>
+<th align="center">城镇人口比重&#x2F;%</th>
+<th align="center">居民消费价格指数（上年&#x3D;100）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">北京</td>
+<td align="center">47.3</td>
+<td align="center">11.81</td>
+<td align="center">86.5</td>
+<td align="center">101.4</td>
+</tr>
+<tr>
+<td align="center">天津</td>
+<td align="center">43.1</td>
+<td align="center">11.45</td>
+<td align="center">82.93</td>
+<td align="center">102.1</td>
+</tr>
+<tr>
+<td align="center">河北</td>
+<td align="center">35.3</td>
+<td align="center">4.29</td>
+<td align="center">53.32</td>
+<td align="center">101.5</td>
+</tr>
+<tr>
+<td align="center">山西</td>
+<td align="center">24.6</td>
+<td align="center">3.54</td>
+<td align="center">56.21</td>
+<td align="center">101.1</td>
+</tr>
+<tr>
+<td align="center">内蒙古</td>
+<td align="center">34.1</td>
+<td align="center">7.19</td>
+<td align="center">61.19</td>
+<td align="center">101.2</td>
+</tr>
+<tr>
+<td align="center">辽宁</td>
+<td align="center">24.2</td>
+<td align="center">5.08</td>
+<td align="center">67.37</td>
+<td align="center">101.6</td>
+</tr>
+<tr>
+<td align="center">吉林</td>
+<td align="center">21.4</td>
+<td align="center">5.41</td>
+<td align="center">55.97</td>
+<td align="center">101.6</td>
+</tr>
+<tr>
+<td align="center">黑龙江</td>
+<td align="center">14.2</td>
+<td align="center">4.05</td>
+<td align="center">59.2</td>
+<td align="center">101.5</td>
+</tr>
+<tr>
+<td align="center">上海</td>
+<td align="center">29.3</td>
+<td align="center">11.64</td>
+<td align="center">87.9</td>
+<td align="center">103.2</td>
+</tr>
+<tr>
+<td align="center">江苏</td>
+<td align="center">37.9</td>
+<td align="center">9.67</td>
+<td align="center">67.72</td>
+<td align="center">102.3</td>
+</tr>
+<tr>
+<td align="center">浙江</td>
+<td align="center">45.2</td>
+<td align="center">8.45</td>
+<td align="center">67</td>
+<td align="center">101.9</td>
+</tr>
+<tr>
+<td align="center">安徽</td>
+<td align="center">18.7</td>
+<td align="center">3.94</td>
+<td align="center">51.99</td>
+<td align="center">101.8</td>
+</tr>
+<tr>
+<td align="center">福建</td>
+<td align="center">26.5</td>
+<td align="center">7.44</td>
+<td align="center">63.6</td>
+<td align="center">101.7</td>
+</tr>
+<tr>
+<td align="center">江西</td>
+<td align="center">21.5</td>
+<td align="center">4.03</td>
+<td align="center">53.1</td>
+<td align="center">102</td>
+</tr>
+<tr>
+<td align="center">山东</td>
+<td align="center">44.1</td>
+<td align="center">6.84</td>
+<td align="center">59.02</td>
+<td align="center">102.1</td>
+</tr>
+<tr>
+<td align="center">河南</td>
+<td align="center">23.7</td>
+<td align="center">4.25</td>
+<td align="center">48.5</td>
+<td align="center">101.9</td>
+</tr>
+<tr>
+<td align="center">湖北</td>
+<td align="center">17.6</td>
+<td align="center">5.55</td>
+<td align="center">58.1</td>
+<td align="center">102.2</td>
+</tr>
+<tr>
+<td align="center">湖南</td>
+<td align="center">21.4</td>
+<td align="center">4.62</td>
+<td align="center">52.75</td>
+<td align="center">101.9</td>
+</tr>
+<tr>
+<td align="center">广东</td>
+<td align="center">29.4</td>
+<td align="center">7.35</td>
+<td align="center">69.2</td>
+<td align="center">102.3</td>
+</tr>
+<tr>
+<td align="center">广西</td>
+<td align="center">22.2</td>
+<td align="center">3.79</td>
+<td align="center">48.08</td>
+<td align="center">101.6</td>
+</tr>
+<tr>
+<td align="center">海南</td>
+<td align="center">18.1</td>
+<td align="center">4.42</td>
+<td align="center">56.78</td>
+<td align="center">102.8</td>
+</tr>
+<tr>
+<td align="center">重庆</td>
+<td align="center">19.6</td>
+<td align="center">5.82</td>
+<td align="center">62.6</td>
+<td align="center">101.8</td>
+</tr>
+<tr>
+<td align="center">四川</td>
+<td align="center">20.4</td>
+<td align="center">3.99</td>
+<td align="center">49.21</td>
+<td align="center">101.9</td>
+</tr>
+<tr>
+<td align="center">贵州</td>
+<td align="center">21.2</td>
+<td align="center">3.31</td>
+<td align="center">44.15</td>
+<td align="center">101.4</td>
+</tr>
+<tr>
+<td align="center">云南</td>
+<td align="center">28.7</td>
+<td align="center">3.1</td>
+<td align="center">45.03</td>
+<td align="center">101.5</td>
+</tr>
+<tr>
+<td align="center">西藏</td>
+<td align="center">23.3</td>
+<td align="center">3.48</td>
+<td align="center">29.56</td>
+<td align="center">102.5</td>
+</tr>
+<tr>
+<td align="center">陕西</td>
+<td align="center">19.9</td>
+<td align="center">5.09</td>
+<td align="center">55.34</td>
+<td align="center">101.3</td>
+</tr>
+<tr>
+<td align="center">甘肃</td>
+<td align="center">18</td>
+<td align="center">2.76</td>
+<td align="center">44.69</td>
+<td align="center">101.3</td>
+</tr>
+<tr>
+<td align="center">青海</td>
+<td align="center">30.5</td>
+<td align="center">4.34</td>
+<td align="center">51.63</td>
+<td align="center">101.8</td>
+</tr>
+<tr>
+<td align="center">宁夏</td>
+<td align="center">30.1</td>
+<td align="center">4.69</td>
+<td align="center">56.29</td>
+<td align="center">101.5</td>
+</tr>
+<tr>
+<td align="center">新疆</td>
+<td align="center">25.2</td>
+<td align="center">4.02</td>
+<td align="center">48.35</td>
+<td align="center">101.4</td>
+</tr>
+</tbody></table>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/22/WtgsSXDN591jB8o.png" alt="image-20230722141940623"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/22/st6l9HpZoFuOJdU.png" alt="image-20230722141945032"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/22/vbNOts1USc2jJWG.png" alt="image-20230722141952356"></p>
+<blockquote>
+<p>(1)模型建立：y&#x3D;612.785+4.812x<del>1</del>-0.445x<del>2</del>-5.768x<del>3</del></p>
+<p>模型检验：</p>
+<ol>
+<li>R^2^&#x3D;0.62,修正后的R^2^&#x3D;0.578，接近于1，说明样本拟合度较好</li>
+<li>F检验：F&#x3D;14.7&gt;F<del>0.05</del>(3,27)&#x3D;2.97，拒绝原假设，说明“人均地区生产总值”、“城镇人口比重”、“居民消费价格指数”对“百户拥有家用汽车量”有显著影响</li>
+<li>T检验：t<del>0.025</del>(27)&#x3D;2.052，在模型系数中，t的值分别为2.435、4.696、-2.194、-2.337，四个的绝对值均大于2.052。同时，四个变量的显著性值P均小于0.05。因此可以判断“人均地区生产总值”、“城镇人口比重”、“居民消费价格指数”对“百户拥有家用汽车量”有显著影响</li>
+</ol>
+<p>检验依据：</p>
+<ol>
+<li>可决系数越大，说明拟合程度越好。</li>
+<li>F 的值与临界值比较，若大于临界值，则否定原假设，回归方程是显著的; 若小于临界值，则接受原假设，回归方程不显著。</li>
+<li>t 的值与临界值比较，若大于临界值，则否定原假设，系数都是显著地:若小于临界值，则接受原假设，系数不显著。</li>
+<li>显著水平与p值比较，若大于p值，则可在显著性水平下拒绝原假设，系数显著:若小于p值,则接受原假设，系数不显著。</li>
+</ol>
+<p>(2)模型估计结果说明，在假定其他变量不变的情况下，人均地区生产总值每增长1万元，百户拥有家用汽车量增加4.812辆；城镇人口比重每增长1%，百户拥有家用汽车量减少0.445辆；居民消费价格指数增长1个百分点，百户拥有家用汽车量减少5.768辆。</p>
+<p>(3)模型改进</p>
+<p>y&#x3D;28.35+4.683x<del>1</del>-0.399x<del>2</del>-2.55*10^-44^e^x3^</p>
+<p>$\begin{aligned}y&#x3D;28.35+4.683x_{1}-0.399x_{2}-2.55\times 10^{-44}<br>e^{x_{3}}\end{aligned}$</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/22/msIbLJz4o91cKBq.png" alt="image-20230722144803986"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/22/rBPbNYW4tE6ohAV.png" alt="image-20230722144808929"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/22/349gftTwoMlxui2.png" alt="image-20230722144812710"></p>
+<p>模型改进后R^2^&#x3D;0.636,修正后的R^2^&#x3D;0.596，样本拟合度更高</p>
+</blockquote>
+<h1 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h1><ol start="3">
+<li>5个水稻品种的产量比较实验,随机区组设计,4次重复,获得每个小区产量资料如下表1.3,试分析这5个水稻品种间产量水平有无明显差异。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="center">品种</th>
+<th align="center">区组（重复）</th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">61</td>
+<td align="center">57</td>
+<td align="center">55</td>
+<td align="center">56</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">53</td>
+<td align="center">52</td>
+<td align="center">50</td>
+<td align="center">51</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">52</td>
+<td align="center">58</td>
+<td align="center">55</td>
+<td align="center">57</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">58</td>
+<td align="center">56</td>
+<td align="center">53</td>
+<td align="center">53</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">53</td>
+<td align="center">51</td>
+<td align="center">54</td>
+<td align="center">55</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>对原始数据集进行调整</p>
+<table>
+<thead>
+<tr>
+<th align="center">X</th>
+<th align="center">Y1</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">61</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">57</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">55</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">56</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">53</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">52</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">50</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">51</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">58</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">56</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">53</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">53</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">53</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">51</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">54</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">55</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">52</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">58</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">55</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">57</td>
+<td align="center">3</td>
+</tr>
+</tbody></table>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/21/HhBm7cpRi6EQZOd.png" alt="image-20230721222522907"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/21/G62ErtOQR85ZMok.png" alt="image-20230721222547147"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/21/s5nolpJDPvSwzNc.png" alt="image-20230721222552328"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/21/Ia8rwkxyO1YNqoZ.png" alt="image-20230721222556542"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/21/ezLryWuK96jY8tw.png" alt="image-20230721222602165"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/21/Aw8zdncTJeu6Vr4.png" alt="image-20230721222605279"></p>
+<blockquote>
+<p>在方差齐性检验表中，显著性均大于0.05，因此满足方差齐性这一前提条件。</p>
+<p>在ANOVA表中，F对应的显著性0.022小于0.05，因此拒绝原假设，认为五组数据中，至少有一组数据与其它几组数据之间存在显著性差异的。</p>
+<p>在多重比较表中，分析LSD下的比较结果得出结论：</p>
+<p>品种1的产量显著高于品种2、5；品种2的产量显著低于品种1、3、4</p>
+<p>品种1和品种3、4无显著差异；品种2和品种5无显著差异；品种5和品种2、3、4无显著差异</p>
+</blockquote>
+<h1 id="第四题"><a href="#第四题" class="headerlink" title="第四题"></a>第四题</h1><ol start="4">
+<li>某位老师正在探讨新的历史教学方法,包括使用录音录像和计算机。他想知道这些新技木对于普通学生和较有天赋的学生的影响是否一样。12 名普通学生和 12 名较有天赋学生被随机分到三个组,在学期未所有学生都进行同样的期末考试,结果见下表1.4。试进行一次两因素方差分析,为你的结果生成一个方差分析表,并分析报告你的结果。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="center">分类</th>
+<th align="center">传统方法</th>
+<th align="center">录音录像</th>
+<th align="center">计算机</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">普通学生</td>
+<td align="center">72</td>
+<td align="center">69</td>
+<td align="center">63</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">83</td>
+<td align="center">66</td>
+<td align="center">72</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">96</td>
+<td align="center">78</td>
+<td align="center">78</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">79</td>
+<td align="center">64</td>
+<td align="center">59</td>
+</tr>
+<tr>
+<td align="center">较有天赋学生</td>
+<td align="center">83</td>
+<td align="center">96</td>
+<td align="center">89</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">95</td>
+<td align="center">87</td>
+<td align="center">93</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">89</td>
+<td align="center">93</td>
+<td align="center">86</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">98</td>
+<td align="center">86</td>
+<td align="center">95</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>原始数据集调整</p>
+<table>
+<thead>
+<tr>
+<th align="center">X</th>
+<th align="center">Y1</th>
+<th align="center">Y2</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">72</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">69</td>
+<td align="center">1</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">63</td>
+<td align="center">1</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">83</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">66</td>
+<td align="center">1</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">72</td>
+<td align="center">1</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">96</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">78</td>
+<td align="center">1</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">78</td>
+<td align="center">1</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">79</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">64</td>
+<td align="center">1</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">59</td>
+<td align="center">1</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">83</td>
+<td align="center">2</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">96</td>
+<td align="center">2</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">89</td>
+<td align="center">2</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">95</td>
+<td align="center">2</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">87</td>
+<td align="center">2</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">93</td>
+<td align="center">2</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">89</td>
+<td align="center">2</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">93</td>
+<td align="center">2</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">86</td>
+<td align="center">2</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">98</td>
+<td align="center">2</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">86</td>
+<td align="center">2</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">95</td>
+<td align="center">2</td>
+<td align="center">3</td>
+</tr>
+</tbody></table>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/22/Xc8xkMgpzI37d2e.png" alt="image-20230722161228148"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/21/hqXm3dCSyHnto6s.png" alt="image-20230721224059966"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/21/hHEasunNUiwKPzT.png" alt="image-20230721224106231"></p>
+<blockquote>
+<p>通过误差方差的莱文等同性检验表可知，显著性值均大于0.05，所以满足方差齐性的条件</p>
+<p>分析主体间效应检验表读出如下结论：</p>
+<ol>
+<li>Y1的检测统计量，F&#x3D;37.423,P&lt;0.001&lt;0.05,说明学生是否有天赋对学生成绩有显著影响</li>
+<li>Y2的监测统计量，F&#x3D;2.838,P&#x3D;0.085&gt;0.05,说明教学方式的更换对学生成绩无显著影响</li>
+<li>Y1*Y2的监测统计量，F&#x3D;2.384,P&#x3D;0.121&gt;0.05,说明学生是否有天赋和教学方式可能无交互作用</li>
+</ol>
+<p>在上述分析的基础上结合描述统计表得出结论：</p>
+<p>较有天赋的学生成绩显著高于普通学生的成绩，虽然不能得出教学方式对学生成绩是否有显著影响，但是在现有数据的分析中，表现出传统教学方式的学生成绩优于新教学方式。</p>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://www.yhhome.top">yuanhao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://www.yhhome.top/post/333262a2.html">https://www.yhhome.top/post/333262a2.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.yhhome.top" target="_blank">知识小窝</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/SPSS/">SPSS</a></div><div class="post_share"><div class="social-share" data-image="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/21.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/post/981b88ac.html" title="8综合评价作业"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/04.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">8综合评价作业</div></div></a></div><div class="next-post pull-right"><a href="/post/f71beda0.html" title="6微分方程模型练习"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/03.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">6微分方程模型练习</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/3.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">yuanhao</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://lucaszyh.github.io/"><i class="fab fa-github"></i><span>🌈前往小窝</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的博客</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E9%A2%98"><span class="toc-text">第一题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E9%A2%98"><span class="toc-text">第二题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E9%A2%98"><span class="toc-text">第三题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E9%A2%98"><span class="toc-text">第四题</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/post/ea2a6787.html" title="大学进化论"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/18.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="大学进化论"/></a><div class="content"><a class="title" href="/post/ea2a6787.html" title="大学进化论">大学进化论</a><time datetime="2023-11-03T14:50:08.000Z" title="发表于 2023-11-03 22:50:08">2023-11-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/d985cdc1.html" title="9总结"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/05.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="9总结"/></a><div class="content"><a class="title" href="/post/d985cdc1.html" title="9总结">9总结</a><time datetime="2023-11-03T14:48:34.000Z" title="发表于 2023-11-03 22:48:34">2023-11-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/981b88ac.html" title="8综合评价作业"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/04.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="8综合评价作业"/></a><div class="content"><a class="title" href="/post/981b88ac.html" title="8综合评价作业">8综合评价作业</a><time datetime="2023-11-03T14:48:15.000Z" title="发表于 2023-11-03 22:48:15">2023-11-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/333262a2.html" title="7统计模型练习"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/21.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="7统计模型练习"/></a><div class="content"><a class="title" href="/post/333262a2.html" title="7统计模型练习">7统计模型练习</a><time datetime="2023-11-03T14:46:46.000Z" title="发表于 2023-11-03 22:46:46">2023-11-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/f71beda0.html" title="6微分方程模型练习"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://yhblog-bucket.oss-cn-beijing.aliyuncs.com/images/03.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="6微分方程模型练习"/></a><div class="content"><a class="title" href="/post/f71beda0.html" title="6微分方程模型练习">6微分方程模型练习</a><time datetime="2023-11-03T14:46:13.000Z" title="发表于 2023-11-03 22:46:13">2023-11-03</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By yuanhao</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"></div><canvas id="universe"></canvas><script defer src="/js/universe.js"></script><script defer src="/js/cursor.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="30" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v6.2.0" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v4.3.1" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://www.netlify.com/" style="margin-inline:5px" data-title="本站采用多线部署，主线路托管于netlify" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-netlify-brightgreen?style=flat&amp;logo=netlify" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/js/runtime.js"></script><!-- hexo injector body_end end --></body></html>
